@@ -303,4 +303,4 @@ Network performance and availability can be measured using metrics such as:
 
 *EtherChannel interfaces on firewall*
 
-![EtherChannel interfaces on firewall](images/firewallEtherchanel.png)
+![EtherChannel interfaces on firewall](images/firewallEtherchannel.png)
