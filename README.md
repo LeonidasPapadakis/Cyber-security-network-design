@@ -139,6 +139,8 @@ gateway.
 - 1-Physical layer – Packets are converted to electric signals and leave through the NIC onto
 copper cables.
 
+![packet example](images/packetExample1.png))
+
 Now suppose a student connected by Wi-Fi uploads a file to the
 storage server remotely.
 - 7 – FTP creates metadata for the file such as a filename. It
@@ -160,6 +162,9 @@ with a TTL and header checksum.
 through the air. The WAP receives them and converts
 them back into electric signals, before forwarding to the
 core.
+
+![packet example](images/packetExample2.1.png))
+![packet example](images/packetExample2.2.png))
 
 Now suppose another student on a wired PC types ‘securelab.net’
 into their browser.
@@ -184,6 +189,10 @@ the web server for HTTPS.
   - Destination MAC – Default gateway from
 PC’s ARP table.
 - 1 – Data is sent out the NIC onto copper cables.
+
+![packet example](images/packetExample3.1.png)
+![packet example](images/packetExample3.2.png))
+
 Routing/switching
 - When receiving packets from end devices, the
 access switch or WAP checks its MAC table and
@@ -238,12 +247,29 @@ backup AAA server would be needed to prevent a single point of failure.
 
 ### Configurations
 
-Core switch ACL
-Firewall ACL
-DHCP snooping and ARP inspection
-Core switch password protection and SSH access
-Firewall ssh access and IPsec encryption:
-Remote student’s IPsec encryption
+*Core switch ACL*
+
+![core switch ACL](images/coreSwitchAcl.png)
+
+*Firewall ACL*
+
+![Firewall ACL](images/firewallAcl.png)
+
+*DHCP snooping and ARP inspection*
+
+![DHCP snooping and ARP inspection](images/dhcpSnoopingArpInspection.png)
+
+*Core switch password protection and SSH access*
+
+![Core switch password protection and SSH access](images/coreSwitchAuth.png)
+
+*Firewall ssh access and IPsec encryption*
+
+![Firewall ssh access and IPsec encryption](images/firewallAuth.png))
+
+*Remote student’s IPsec encryption*
+
+![Remote student’s IPsec encryption](images/remoteStudent.png)
 
 ## Network Security and Availability (B)
 
@@ -271,6 +297,10 @@ Network performance and availability can be measured using metrics such as:
 
 ### Configurations
 
-Core switch SVIs shared using HSRP
+*Core switch SVIs shared using HSRP*
 
-EtherChannel interfaces on firewall
+![Core switch SVIs shared using HSRP](images/coreSwitchSvi.png)
+
+*EtherChannel interfaces on firewall*
+
+![EtherChannel interfaces on firewall](images/firewallEtherchanel.png)
